@@ -61,7 +61,7 @@ const handleSubmit = async () => {
 
   if (!valid) return;
 
-  isSubmitting.value = ref(true);
+  isSubmitting.value = true;
 
   try {
     const newComment = await createComment({
